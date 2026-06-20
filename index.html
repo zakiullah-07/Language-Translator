@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Language Translator </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea spellcheck="false" class="from-text" id="from-text" placeholder="Enter text"></textarea>
+          <textarea spellcheck="false" readonly disabled class="to-text" id="to-text" placeholder="Translation"></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up" aria-label="Read text aloud"></i>
+              <i id="from" class="fas fa-copy" aria-label="Copy text"></i>
+            </div>
+            <select id="from-lang" aria-label="Select language to translate from"></select>
+          </li>
+          <li class="exchange" aria-label="Swap languages"><i class="fas fa-exchange-alt"></i></li>
+          <li class="row to">
+            <select id="to-lang" aria-label="Select language to translate to"></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up" aria-label="Read translation aloud"></i>
+              <i id="to" class="fas fa-copy" aria-label="Copy translation"></i>
+            </div>
+          </li>
+        </ul>
+        <button aria-label="Translate text">Translate Text</button>
+      </div>
+      <div class="credits">
+        <p><h2>Designed and Developed By:</h2></p>
+        <ul>
+          <li> Sardar Zakiullah </li>
+		<li> AI student at NATIONAL UNIVERSITY OF TECHNOLOGY </li>
+		<li> email: sardarzakiullah6@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
